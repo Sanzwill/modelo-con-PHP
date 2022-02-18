@@ -1,0 +1,99 @@
+<!doctype <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contactos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <!-- my styles-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- my scripts -->
+    <script type="text/javascript" src="assets/js/contacto.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <a class="navegacion__enlace" href=" ../VISTA/nosotros.html "></a>
+        
+        <a class="navegacion__enlace" href="../PHP/index.html">
+    
+</head>
+<body>
+    
+<div class="container">
+    <a class="navegacion__enlace navegacion__enlace--activo" href="../VISTA/nosotros.html ">NOSOTROS</a>
+    <a class="navegacion__enlace" href=" ../PHP/index.html">TIENDA</a>
+
+    <a href="index.html">
+        <!-- <img class="header__logo" src="" alt="Logotipo"> </a> -->
+        <!-- <video src="../MODELO/img/idea.mp4" autoplay > -->
+        <h1>Contactos de esta pagina</h1>
+    <center>Contactemos para cualquier inquitud</center>
+
+    <div class="sample-div">
+        <!-- <div class="transpa-bg"><img src="../MODELO/img/junior.jpg"> -->
+           
+        <body   style=" background-color:#1f3a53;">  
+        
+           
+    
+    <div class="alert" id="messages"></div>
+
+    <form method="post" action="" name="contact" id="contact" onsubmit="enviar(this); return false;">   
+    <hr />
+        <!-- nombre  -->
+        <div class="form-group">
+            <label for="name">Nombre/Apellidos:</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" placeholder="Nombre" id="name" name="name" required />               
+            </di v>
+        </div>
+        <!-- telefono -->
+        <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-mobile-alt"></i></div>
+                </div>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Teléfono" required />               
+            </div>
+        </div>
+        <!-- email -->
+        <div class="form-group">
+            <label>Email:</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+                </div>
+                <input type="email" class="form-control" id="email" name="email" placeholder="su@email" required />               
+         </div>
+            <small id="emailHelp" class="form-text text-muted">Su email no será compartido con nadie.</small>
+        </div>
+        <!-- mensaje -->
+        <div class="form-group">
+            <label for="subject">Asunto:</label>
+            <textarea placeholder="Asunto" id="subject" name="subject" class="form-control" required></textarea>
+        </div>
+<!-- 
+        google recaptcha
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <div class="g-recaptcha" data-sitekey="6LcDpKAUAAAAAPMVo11fCzBYnge6HnmSAg2PRDhP"></div> -->
+
+        <hr />
+        <!-- submit -->
+        <button type="submit" id="send" name="send">Enviar</button>
+
+  </body> 
+</div>
+    </form>
+
+</div>
+
+</body>
+</html>
